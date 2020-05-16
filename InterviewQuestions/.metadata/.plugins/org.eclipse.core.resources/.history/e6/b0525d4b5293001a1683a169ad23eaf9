@@ -1,0 +1,31 @@
+package com.hackerrankcoding;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class BinaryNumbers {
+
+	public static void main(String[] args) {
+		int number = 13;
+		convertToBinaryNumber(number);
+	}
+	
+	public static char[] convertToBinaryNumber(Integer number) {
+		String binaryNumber = Integer.toBinaryString(number);
+		char[] binaryNumberArray =	binaryNumber.toCharArray();
+		String[] strparts = binaryNumber.split("0");
+		int total=0;
+		for(int i = 0;i<strparts.length;i++) {
+			if(total < strparts[i].length()) {
+				
+			}
+		}
+		checkConsecutiveOnes(binaryNumberArray);
+		return binaryNumberArray;
+	}
+
+	private static void checkConsecutiveOnes(char[] binaryNumberArray) {
+  // List<Character> list = Arrays.asList(binaryNumberArray);		
+	}
+
+}

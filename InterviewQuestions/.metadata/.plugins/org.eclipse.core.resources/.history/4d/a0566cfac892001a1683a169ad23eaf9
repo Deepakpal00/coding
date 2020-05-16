@@ -1,0 +1,43 @@
+package coding.com.arrays;
+
+public class SpiralFormOfMatrix {
+
+	public static void main(String[] args) {
+		int array[][] = { { 1, 2, 3, 4 }
+						, { 5, 6, 7, 8 }
+						, { 9, 10, 11, 12 }, 
+						{ 13, 14, 15, 16 } };
+		spiralForm(array);
+	}
+	private static void spiralForm(int[][] array) {
+		int row = array.length - 1;
+		int col = array[0].length;
+		int startRow = 0;
+		int startCol = 0;
+
+		while (startRow < row && startCol < col) {
+			for (int i = startCol; i < col; i++) {
+				System.out.print(array[startRow][i] + " ");
+			}
+			startRow++;
+
+			for (int i = startRow; i < col; i++) {
+				System.out.print(array[i][col - 1] + " ");
+			}
+			col--;
+
+			for (int i = col - 1; i >= 0; i--) {
+				System.out.print(array[row][i] + " ");
+			}
+			row--;
+
+			for (int i = row; i > 0; i--) {
+				System.out.print(array[i][startCol] + " ");
+			}
+			startCol++;
+
+		}
+
+	}
+
+}

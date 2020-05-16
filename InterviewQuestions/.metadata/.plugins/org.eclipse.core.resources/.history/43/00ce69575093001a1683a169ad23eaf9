@@ -1,0 +1,17 @@
+package com.hackerrankcoding;
+
+public class BinaryNumbers {
+
+	public static void main(String[] args) {
+		int number = 13;
+		convertToBinaryNumber(number);
+	}
+	
+	public static Integer[] convertToBinaryNumber(Integer number) {
+		String binaryNumber = Integer.toBinaryString(number);
+		String binary = Integer.toString(number, 2);
+		
+		return new Integer[5];
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.hackerrankcoding;
+
+public class BinaryNumbers {
+
+	public static void main(String[] args) {
+		int number = 13;
+		
+	}
+
+}

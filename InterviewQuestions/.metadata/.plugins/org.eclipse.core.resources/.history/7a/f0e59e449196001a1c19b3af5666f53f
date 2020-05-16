@@ -1,0 +1,58 @@
+package java8;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamMethods {
+
+	private static void printArray(List<String> list) {
+		list.stream().forEach(System.out::println);
+	}
+
+	private static void countEmpythString(List<String> list) {
+
+		long count = list.stream().filter(li -> li.isEmpty()).count();
+		System.out.println("Total count of empty string " + count);
+
+	}
+
+	private static void countStringsLenghtMoreThan3(List<String> strList) {
+		long count = strList.stream().filter(li-> li.length()>3).count();
+		System.out.println("Totat count of string lenght more than 3");
+
+	}
+		
+	private static void removeAllEmptyString(List<String> strList) {
+          List<String> newList = strList.stream().filter(li-> !li.isEmpty()).collect(Collectors.toList());
+          System.out.println("after remove all empty list "+newList);
+	}
+	
+	private static void convertStringToUperCase(List<String> strList) {
+		List<String> newList = strList.stream().map(li-> li.toUpperCase()).collect(Collectors.toList());		
+	}
+	
+	public static void main(String[] args) {
+		List<String> strList = Arrays.asList("abc", "", "bcd", "", "defg", "jk");
+		printArray(strList);
+
+		// Count the empty strings
+		countEmpythString(strList);
+		
+		// Count String with length more than 3
+		countStringsLenghtMoreThan3(strList);
+		
+		// Remove all empty Strings from List
+		removeAllEmptyString(strList);
+
+		// Convert String to Uppercase 
+		convertStringToUperCase(strList);
+
+		
+	}
+
+	
+
+	
+
+}

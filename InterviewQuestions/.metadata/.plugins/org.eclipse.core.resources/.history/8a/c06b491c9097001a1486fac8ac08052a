@@ -1,0 +1,32 @@
+package com.hackerrankcoding;
+
+public class RepeatedString {
+	static long repeatedString(String s, long n) {  //dbca
+        long length = s.length();
+        long rem = n%length;
+        long count =0;
+        long que =  n/length;
+
+        for(char i =0;i<length;i++){
+        	char str = s.charAt(i);
+            if(s.charAt(i) == 'a'){
+                count+=que;
+            }
+
+        }
+        for(char j = 0;j<rem;j++) {
+        	if(s.charAt(j) == 'a'){
+                count++;
+            }
+        }
+        return count;
+       // System.out.println(null);
+
+    }
+
+	public static void main(String[] args) {
+		repeatedString("a",10);
+
+	}
+
+}
