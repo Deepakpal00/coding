@@ -25,7 +25,7 @@ public class AddTwoNumbers { //(2 -> 4 -> 3) + (5 -> 6 -> 4)
 		
 		while(first!=null || second!=null) {
 			
-			int firstElement = (first!=null)?first.data
+		//	int firstElement = (first!=null)?first.data
 		}
 		
 		
