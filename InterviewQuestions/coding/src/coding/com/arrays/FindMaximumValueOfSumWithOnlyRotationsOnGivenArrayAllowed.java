@@ -11,9 +11,9 @@ public class FindMaximumValueOfSumWithOnlyRotationsOnGivenArrayAllowed {
 		int array[] = { 1, 20, 2, 10 };
 		// 20 1 10 2 // 2 10 1 20
 		int arrayLength = array.length;
-		int maxIndex = findMax(array, array.length);
+		int maxIndex = findMax(array, arrayLength);
 
-		int totalRotationRequired = (array.length - maxIndex) - 1;
+		int totalRotationRequired = (arrayLength - maxIndex) - 1;
 
 		rotateArray(array, arrayLength, 0, totalRotationRequired - 1);
 		rotateArray(array, arrayLength, totalRotationRequired, arrayLength - 1);
