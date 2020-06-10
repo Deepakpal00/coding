@@ -5,19 +5,19 @@ package coding.com.arrays;
 public class QuicklyFindMultipleLeftRotaion {
 
 	public static void main(String[] args) {
-		int array[] = { 1, 3, 5, 7, 9 }; // 5 7 9 1 3
+		int array[] = { 1, 3, 5, 7, 9 }; 
 		int n = array.length;
 
 		int k = 2;
 		leftRotate(array, n, k);
 		System.out.println();
 
-		k = 3;
+		k = 3;   
 		leftRotate(array, n, k);
 		System.out.println();
 
 		k = 4;
-		leftRotate(array, n, k);
+		leftRotate(array, n, k); 
 		System.out.println();
 	}
 
