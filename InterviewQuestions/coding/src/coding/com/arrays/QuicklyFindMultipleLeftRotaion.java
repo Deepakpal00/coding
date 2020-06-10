@@ -1,5 +1,7 @@
 package coding.com.arrays;
 
+// https://www.geeksforgeeks.org/quickly-find-multiple-left-rotations-of-an-array/
+
 public class QuicklyFindMultipleLeftRotaion {
 
 	public static void main(String[] args) {
