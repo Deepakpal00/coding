@@ -1,6 +1,6 @@
 package coding.com.arrays;
 
-import java.util.Arrays;
+import java.util.*;
 import java.util.HashSet;
 import java.util.Set;
 
