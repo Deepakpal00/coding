@@ -5,7 +5,7 @@ package coding.com.arrays;
 public class BuyAndSellStock {
 
 	public static void main(String[] args) {
-		int array[] = { 7, 1, 5, 3, 6, 4 };
+		int array[] = {10, 22, 5, 75, 65, 80};//{ 7, 1, 5, 3, 6, 4 };
 		int result = findMaxProfit(array.length, array);
 		System.out.println(result);
 	}
